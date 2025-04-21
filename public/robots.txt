@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://getrandompassword.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10 
