@@ -4,6 +4,7 @@ import PasswordDisplay from './PasswordDisplay';
 import PasswordOptions from './PasswordOptions';
 import PasswordStrength from './PasswordStrength';
 import AnalyticsPanel from './AnalyticsPanel';
+import { Github } from 'lucide-react';
 
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center min-h-screen">
@@ -114,7 +115,18 @@ const PasswordGenerator: React.FC = () => {
               Your passwords are generated locally and are never stored on any server.
               We prioritize your privacy and security.
             </p>
-            <p className="mt-2">
+            <div className="flex justify-center space-x-4 mt-4">
+              <a
+                href="https://github.com/kevin1193/getrandompassword"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                <Github className="h-5 w-5 inline-block mr-1" />
+                View on GitHub
+              </a>
+            </div>
+            <p className="mt-4">
               © {new Date().getFullYear()} getrandompassword.com - Free Online Password Generator
             </p>
           </footer>
