@@ -45,7 +45,7 @@ const PasswordGenerator: React.FC = () => {
               className="h-16 w-16 transform transition-transform hover:scale-110" 
             />
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Free Password Generator</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-2">Random Password Generator</h1>
           <p className="text-xl text-gray-600">Generate strong, secure passwords instantly</p>
           <p className="text-sm text-gray-500 mt-1">No tracking, no storage, 100% private</p>
         </header>
@@ -79,7 +79,7 @@ const PasswordGenerator: React.FC = () => {
               >
                 <img 
                   src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=954936&theme=neutral" 
-                  alt="Free Password Generator - Strong & secure | getrandompassword.com | Product Hunt" 
+                  alt="Random Password Generator - Strong & secure | getrandompassword.com | Product Hunt" 
                   style={{ width: '250px', height: '54px' }} 
                   width="250" 
                   height="54" 

@@ -1,6 +1,6 @@
-# Contributing to Free Password Generator
+# Contributing to Random Password Generator
 
-Thank you for your interest in contributing to our Free Password Generator! This document provides guidelines and instructions for contributing to the project.
+Thank you for your interest in contributing to our Random Password Generator! This document provides guidelines and instructions for contributing to the project.
 
 ## Code of Conduct
 
@@ -126,4 +126,4 @@ If you need help or have questions:
 - Join our community discussions
 - Contact the maintainers
 
-Thank you for contributing to Free Password Generator! 🚀 
+Thank you for contributing to Random Password Generator! 🚀 

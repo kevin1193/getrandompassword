@@ -1,4 +1,4 @@
-# Free Password Generator
+# Random Password Generator
 
 A secure, privacy-focused password generator built with React, TypeScript, and Supabase. Generate strong, random passwords instantly with customizable options.
 

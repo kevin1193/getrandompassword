@@ -10,7 +10,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'robots.txt', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Free Password Generator',
+        name: 'Random Password Generator',
         short_name: 'Password Gen',
         description: 'Generate strong, secure passwords instantly',
         theme_color: '#3B82F6',
