@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { PasswordOptions, PasswordStats } from '../types/password';
 import { generatePassword, calculatePasswordStrength, calculatePasswordStats } from '../utils/passwordUtils';
-import { useAnalytics } from './useAnalytics';
-import { trackAnalyticsEvent } from '../lib/supabase';
 
 const DEFAULT_OPTIONS: PasswordOptions = {
   length: 16,
@@ -19,15 +17,7 @@ export const usePasswordGenerator = () => {
   const [strength, setStrength] = useState(0);
   const [stats, setStats] = useState<PasswordStats | null>(null);
   const [copied, setCopied] = useState(false);
-  
-  const {
-    analytics,
-    isLoading,
-    trackPasswordGeneration,
-    trackPasswordCopy,
-    getSessionDuration,
-    getMostPopularLength,
-  } = useAnalytics();
+
 
   useEffect(() => {
     generateNewPassword();
@@ -44,18 +34,6 @@ export const usePasswordGenerator = () => {
     const newPassword = generatePassword(options);
     setPassword(newPassword);
     setCopied(false);
-    
-    const newStrength = calculatePasswordStrength(newPassword);
-    const newStats = calculatePasswordStats(newPassword);
-    
-    if (newStats) {
-      trackPasswordGeneration(options, newStrength, newStats);
-      trackAnalyticsEvent('password_generated', {
-        passwordLength: options.length,
-        passwordStrength: newStrength,
-        characterTypes: newStats.characterTypes,
-      }).catch(console.error);
-    }
   };
 
   const copyToClipboard = () => {
@@ -64,8 +42,6 @@ export const usePasswordGenerator = () => {
     navigator.clipboard.writeText(password)
       .then(() => {
         setCopied(true);
-        trackPasswordCopy();
-        trackAnalyticsEvent('password_copied', {}).catch(console.error);
         setTimeout(() => setCopied(false), 2000);
       })
       .catch(err => {
@@ -83,10 +59,6 @@ export const usePasswordGenerator = () => {
     stats,
     options,
     copied,
-    analytics,
-    isLoading,
-    sessionDuration: getSessionDuration(),
-    mostPopularLength: getMostPopularLength(),
     generateNewPassword,
     copyToClipboard,
     updateOption,
