@@ -1,3 +1,5 @@
+import { BlogPost } from '../types/blog';
+
 export interface BlogPost {
   title: string;
   slug: string;
@@ -8,6 +10,132 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 'zxcvbn-password-strength',
+    title: 'Understanding Password Strength with Dropbox\'s zxcvbn Algorithm',
+    slug: 'zxcvbn-password-strength',
+    date: '2024-03-20',
+    readTime: '5 min read',
+    excerpt: 'Learn how Dropbox\'s zxcvbn algorithm provides realistic password strength estimation by analyzing common patterns, dictionary words, and keyboard sequences.',
+    content: `
+# Understanding Password Strength with Dropbox's zxcvbn Algorithm
+
+In the world of password security, not all strength meters are created equal. Many password strength estimators use simplistic approaches that can be misleading, such as just checking for the presence of numbers, special characters, or uppercase letters. This is where Dropbox's zxcvbn algorithm comes in, offering a more sophisticated and realistic approach to password strength estimation.
+
+## What is zxcvbn?
+
+zxcvbn is an open-source password strength estimator created by Dropbox. Unlike traditional password strength meters, zxcvbn takes a more realistic approach by considering:
+
+- Common patterns and sequences
+- Dictionary words and common substitutions
+- Keyboard patterns (like "qwerty" or "asdf")
+- Dates and years
+- Common password structures
+
+## How zxcvbn Works
+
+The algorithm uses a sophisticated pattern-matching approach to estimate password strength:
+
+1. **Pattern Recognition**: It identifies common patterns in passwords, such as:
+   - Dictionary words (with common substitutions like 'a' to '@')
+   - Keyboard sequences
+   - Repeated characters
+   - Dates and years
+   - Common password structures
+
+2. **Entropy Calculation**: Instead of just counting character types, zxcvbn calculates entropy based on:
+   - The size of the pattern's search space
+   - The frequency of the pattern in real passwords
+   - The number of guesses required to crack the password
+
+3. **Realistic Scoring**: The algorithm provides a score from 0 to 4:
+   - 0: Very weak
+   - 1: Weak
+   - 2: Medium
+   - 3: Strong
+   - 4: Very strong
+
+## Why zxcvbn is Better
+
+Traditional password strength meters often give misleading results. For example:
+
+- "P@ssw0rd" might be considered "strong" by basic meters
+- "correcthorsebatterystaple" might be considered "weak"
+
+zxcvbn correctly identifies that:
+- "P@ssw0rd" is weak (common word with predictable substitutions)
+- "correcthorsebatterystaple" is strong (four uncommon words)
+
+## Real-World Examples
+
+Let's look at some examples of how zxcvbn evaluates passwords:
+
+1. "password123"
+   - Score: 0 (Very weak)
+   - Reason: Common word + common number sequence
+
+2. "P@ssw0rd!"
+   - Score: 1 (Weak)
+   - Reason: Common word with predictable substitutions
+
+3. "correcthorsebatterystaple"
+   - Score: 3 (Strong)
+   - Reason: Four uncommon words
+
+4. "Tr0ub4dour&3"
+   - Score: 2 (Medium)
+   - Reason: Common word with substitutions
+
+## Implementing zxcvbn
+
+Implementing zxcvbn in your application is straightforward:
+
+1. Install the package:
+   \`\`\`bash
+   npm install zxcvbn
+   \`\`\`
+
+2. Use it in your code:
+   \`\`\`javascript
+   import zxcvbn from 'zxcvbn';
+   
+   const result = zxcvbn('password');
+   console.log(result.score); // 0-4
+   console.log(result.feedback); // Helpful feedback
+   \`\`\`
+
+## Best Practices
+
+When using zxcvbn, consider these best practices:
+
+1. **Provide Feedback**: Use the algorithm's feedback to guide users toward stronger passwords
+2. **Combine with Other Measures**: Use zxcvbn alongside other security measures
+3. **Regular Updates**: Keep the dictionary and patterns up to date
+4. **User Education**: Help users understand why certain passwords are weak
+
+## Conclusion
+
+Dropbox's zxcvbn algorithm represents a significant improvement in password strength estimation. By considering real-world password patterns and common attack methods, it provides more accurate and useful feedback to users. This leads to better password choices and improved security.
+
+Remember, while zxcvbn is a powerful tool, it's just one part of a comprehensive password security strategy. Always combine it with other security measures like:
+
+- Rate limiting
+- Secure password storage
+- Multi-factor authentication
+- Regular security audits
+
+By using zxcvbn, you're taking a step toward more realistic and effective password security.
+
+## Resources
+
+- [zxcvbn GitHub Repository](https://github.com/dropbox/zxcvbn)
+- [Dropbox's zxcvbn Blog Post](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
+- [Password Strength Best Practices](https://owasp.org/www-community/attacks/Password_Strength)
+    `,
+    tags: ['Security', 'Passwords', 'Algorithms', 'Web Development'],
+    author: 'Your Name',
+    image: '/blog/zxcvbn-password-strength.jpg'
+  },
   {
     title: "How to Create Strong Passwords That Are Easy to Remember",
     slug: "create-strong-memorable-passwords",

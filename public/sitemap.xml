@@ -7,49 +7,133 @@
 
   <url>
     <loc>https://getrandompassword.com/</loc>
-    <lastmod>2025-04-20</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://getrandompassword.com/blog</loc>
-    <lastmod>2025-04-20</lastmod>
+    <lastmod>2024-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://getrandompassword.com/blog/create-strong-memorable-passwords</loc>
-    <lastmod>2024-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://getrandompassword.com/blog/password-security-myths</loc>
+    <loc>https://getrandompassword.com/blog/zxcvbn-password-strength</loc>
     <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getrandompassword.com/blog/evolution-password-security</loc>
+    <loc>https://getrandompassword.com/blog/strong-passwords</loc>
     <lastmod>2024-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getrandompassword.com/blog/protect-passwords-phishing</loc>
+    <loc>https://getrandompassword.com/blog/password-managers</loc>
     <lastmod>2024-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getrandompassword.com/blog/password-managers-guide</loc>
+    <loc>https://getrandompassword.com/blog/two-factor-authentication</loc>
     <lastmod>2024-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://getrandompassword.com/blog/password-security-best-practices-2024</loc>
-    <lastmod>2024-03-22</lastmod>
+    <loc>https://getrandompassword.com/blog/common-password-mistakes</loc>
+    <lastmod>2024-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-security-tips</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-entropy</loc>
+    <lastmod>2024-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-hashing</loc>
+    <lastmod>2024-03-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-policies</loc>
+    <lastmod>2024-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-reuse</loc>
+    <lastmod>2024-03-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-recovery</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-encryption</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-storage</loc>
+    <lastmod>2024-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-cracking</loc>
+    <lastmod>2024-03-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-breach</loc>
+    <lastmod>2024-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-audit</loc>
+    <lastmod>2024-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-compliance</loc>
+    <lastmod>2024-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-standards</loc>
+    <lastmod>2024-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-best-practices</loc>
+    <lastmod>2024-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://getrandompassword.com/blog/password-security-checklist</loc>
+    <lastmod>2024-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
