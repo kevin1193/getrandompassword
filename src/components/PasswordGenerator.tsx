@@ -69,16 +69,6 @@ const PasswordGenerator: React.FC = () => {
             <SecurityInfo />
           </Suspense>
 
-          <section aria-label="Password Analytics">
-            <Suspense fallback={<div className="animate-pulse h-32 bg-gray-100 rounded-lg"></div>}>
-              <AnalyticsPanel
-                analytics={analytics}
-                sessionDuration={sessionDuration}
-                mostPopularLength={mostPopularLength}
-              />
-            </Suspense>
-          </section>
-
           <footer className="text-center text-sm text-gray-500 mt-8">
             <div className="flex justify-center mb-4">
               <a 
